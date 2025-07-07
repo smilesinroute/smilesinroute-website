@@ -10,25 +10,21 @@
   --spacing: 1rem;
   --max-width: 1200px;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: var(--font-body);
   line-height: 1.6;
   background-color: var(--color-bg);
   color: var(--color-text-light);
 }
-
 img {
   max-width: 100%;
   display: block;
 }
-
 a {
   color: var(--color-accent);
   text-decoration: none;
@@ -36,7 +32,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -54,15 +49,12 @@ a:hover {
   clip: auto;
   white-space: normal;
 }
-
-/* ===== Layout Utilities ===== */
 .container {
   width: 90%;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--spacing) 0;
 }
-
 .btn {
   display: inline-block;
   font-family: var(--font-body);
@@ -90,8 +82,6 @@ a:hover {
   background-color: var(--color-accent);
   color: var(--color-text-light);
 }
-
-/* ===== Header ===== */
 header {
   background-color: var(--color-primary);
   padding: var(--spacing) 0;
@@ -121,8 +111,6 @@ nav {
 .translate-widget {
   margin-left: 1rem;
 }
-
-/* ===== Hero ===== */
 .hero {
   text-align: center;
   padding: 6rem 0;
@@ -138,16 +126,12 @@ nav {
   margin-bottom: 2rem;
   color: var(--color-text-muted);
 }
-
-/* ===== Sections ===== */
 section h2 {
   font-family: var(--font-heading);
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
-
-/* Services Grid */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -161,8 +145,6 @@ section h2 {
   margin-bottom: 0.5rem;
   color: var(--color-accent);
 }
-
-/* How It Works Steps */
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -186,8 +168,6 @@ section h2 {
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
-
-/* Forms */
 form {
   display: grid;
   gap: 1rem;
@@ -210,8 +190,46 @@ form textarea:focus {
   outline: none;
   border-color: var(--color-accent);
 }
-
-/* Footer */
+.disclaimer {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+.notary-rules {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.notary-rules h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.notary-rules ul {
+  list-style-position: inside;
+  margin-left: 0;
+}
+.contact {
+  padding: 2rem 0;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.privacy,
+.terms {
+  padding: 2rem 0;
+}
+.privacy h1,
+.terms h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+}
+.privacy-section,
+.terms-section {
+  margin: 1.5rem 0;
+}
 footer {
   background-color: var(--color-primary);
   color: var(--color-text-muted);
@@ -247,8 +265,6 @@ footer {
   margin-top: 1rem;
   font-size: 0.8rem;
 }
-
-/* Responsive */
 @media (max-width: 768px) {
   .nav-list {
     flex-direction: column;
@@ -257,11 +273,12 @@ footer {
     top: 100%;
     right: 0;
     width: 200px;
-    display: none; /* Toggle via JS if you add a menu button */
+    display: none;
   }
   .footer-container {
     flex-direction: column;
     text-align: center;
   }
 }
+
 
